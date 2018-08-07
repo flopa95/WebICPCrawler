@@ -1,0 +1,12 @@
+<table border="1">
+    <tr>
+            <th align="left">Domain</th>
+            <th>ICP (Y/N/Invalid)</th>
+    </tr>
+    {% for k,v in results.items() %}
+            <tr>
+                    <td>{{ k }}</td>
+                    <td align="center">{{ v }}</td>
+            </tr>
+    {% endfor %}
+</table>
